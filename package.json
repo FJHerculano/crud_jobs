@@ -1,0 +1,35 @@
+{
+  "name": "crud_jobs",
+  "version": "1.0.0",
+  "description": "Esse é um aruivo crd de vagas de emprego",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FJHerculano/crud_jobs.git"
+  },
+  "keywords": [
+    "dev",
+    "job",
+    "dev",
+    "oportunity"
+  ],
+  "author": "Herculano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FJHerculano/crud_jobs/issues"
+  },
+  "homepage": "https://github.com/FJHerculano/crud_jobs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

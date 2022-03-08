@@ -1,0 +1,48 @@
+
+    <div id="add-form-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Divulgue a vaga preenchendo o formulário </h1>
+            </div>
+            <div id="form-box" class="col-md-12">
+                <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
+                <form action="">
+
+                    <!--Primeiro campo form-->
+                    <div class="form-group">
+                        <label for="title">Título</label>
+                        <input required type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga"  >
+                        <small id="titleHelp" class="form-text text-muted">O título é muito importante, seja claro e objetivo</small>
+                    </div>
+
+                    <!--segundo campo form-->
+                    <div class="form-group">
+                        <label for="description">Descrição da vaga</label>
+                        <textarea required type="text" class="form-control" id="description"  name="description" placeholder="Descreva os requisitos minimos do desenvolvedor..."></textarea>
+                    </div>
+
+                    <!--terceiro campo form-->
+                    <div class="form-group">
+                        <label for="company">Empresa contratante</label>
+                        <input required type="text" class="form-control" id="company"  name="company" placeholder="Digite o nome da empresa" >
+                    </div>
+
+                    <!--quarto campo form-->
+                    <div class="form-group">
+                        <label for="email">Email do RH</label>
+                        <input required type="email" class="form-control" id="email"  name="email" placeholder="Digite o email para o envio de curriculo" >
+                    </div>
+
+                    <!--quinto campo form-->
+                    <div class="form-group">
+                        <label for="salary">Salário</label>
+                        <input required type="text" class="form-control" id="salary" name="salary" placeholder="Digite o salario da vaga" >
+                    </div>
+
+                    <input type="hidden" name="new_job" value="1">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>

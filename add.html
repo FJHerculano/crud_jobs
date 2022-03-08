@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Crud</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+    <!-- Navbar da aplicação -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" class="navbar-brand">Job Crud</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"> Ver Vagas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="add.html"  class="nav-link btn btn-primary"> Abrir Vaga</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="add-form-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Divulgue a vaga preenchendo o formulário </h1>
+            </div>
+            <div id="form-box" class="col-md-12">
+                <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu dev!</h2>
+                <form action="">
+
+                    <!--Primeiro campo form-->
+                    <div class="form-group">
+                        <label for="title">Título</label>
+                        <input required type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga"  >
+                        <small id="titleHelp" class="form-text text-muted">O título é muito importante, seja claro e objetivo</small>
+                    </div>
+
+                    <!--segundo campo form-->
+                    <div class="form-group">
+                        <label for="description">Descrição da vaga</label>
+                        <textarea required type="text" class="form-control" id="description"  name="description" placeholder="Descreva os requisitos minimos do desenvolvedor..."></textarea>
+                    </div>
+
+                    <!--terceiro campo form-->
+                    <div class="form-group">
+                        <label for="company">Empresa contratante</label>
+                        <input required type="text" class="form-control" id="company"  name="company" placeholder="Digite o nome da empresa" >
+                    </div>
+
+                    <!--quarto campo form-->
+                    <div class="form-group">
+                        <label for="email">Email do RH</label>
+                        <input required type="email" class="form-control" id="email"  name="email" placeholder="Digite o email para o envio de curriculo" >
+                    </div>
+
+                    <!--quinto campo form-->
+                    <div class="form-group">
+                        <label for="salary">Salário</label>
+                        <input required type="text" class="form-control" id="salary" name="salary" placeholder="Digite o salario da vaga" >
+                    </div>
+
+                    <input type="hidden" name="new_job" value="1">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
